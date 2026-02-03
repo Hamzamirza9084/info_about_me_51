@@ -2,15 +2,14 @@ Enrollment no:202504104610051
 name : hamza mirza
 Mca - A
 
-
-
-git init 
-
 git config --global user.name hamzamirza9084 
 git config --global user.name hamzamirza9084@gmail.com
 
+gh repo create info_about_me_51 --public
+gh auth login
+git init 
 git add .
 git commit -m "first commit by me"
-git remote add origin https://github.com/Hamzamirza9084/Info_About_me
+git remote add origin https://github.com/Hamzamirza9084/info_about_me_51.git
 git push origin main 
 
