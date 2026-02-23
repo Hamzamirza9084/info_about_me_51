@@ -49,6 +49,8 @@ java RightHalfPyramid
 * * * * * *
 ```
 
+![Right Half Pyramid](1.png)
+
 ### Explanation
 - Outer loop controls the number of rows (1 to 6)
 - Inner loop prints asterisks for each row
@@ -97,6 +99,8 @@ java FullPyramid
     * *
      *
 ```
+
+![Full Pyramid](2.png)
 
 ### Explanation
 - Starts from 5 rows and decrements to 1
