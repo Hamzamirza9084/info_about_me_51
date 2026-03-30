@@ -13,3 +13,20 @@ git commit -m "first commit by me"
 git remote add origin https://github.com/Hamzamirza9084/info_about_me_51.git
 git push origin main 
 
+sahilbundela9 laravel-Pratical-s
+
+MAIL_MAILER=smtp
+
+MAIL_HOST=smtp.gmail.com
+
+MAIL_PORT=587
+
+MAIL_USERNAME=hamzamirzaop786@gmail.com
+
+MAIL_PASSWORD=njbyvgcgyclcomzs
+
+MAIL_ENCRYPTION=tls
+
+MAIL_FROM_ADDRESS="hamzamirzaop786@gmail.com"
+
+MAIL_FROM_NAME="${APP_NAME}"
