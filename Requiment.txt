@@ -32,3 +32,15 @@ MAIL_FROM_ADDRESS="hamzamirzaop786@gmail.com"
 MAIL_FROM_NAME="${APP_NAME}"
 
 php artisan make:mail message 
+
+composer require laravel/jetstream
+
+php artisan jetstream:install livewire
+
+npm install
+npm run build
+php artisan migrate
+
+
+QUEUE_CONNECTION=database
+php artisan queue:work
