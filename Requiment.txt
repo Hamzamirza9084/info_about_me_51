@@ -13,3 +13,109 @@ git commit -m "first commit by me"
 git remote add origin https://github.com/Hamzamirza9084/info_about_me_51.git
 git push origin main 
 
+
+
+
+
+
+
+
+
+
+
+
+====================================================
+PRACTICAL: GOOGLE CLOUD MONITORING & ALERTING
+====================================================
+
+Step 1: Enable Monitoring API
+- Open the Google Cloud Console.
+- Navigate to "API & Services" > "Dashboard" and click on the "+ Enable APIs and Services" button.
+- Search for "Monitoring API" and enable it.
+
+Step 2: Create a Monitoring Workspace
+- In the Google Cloud Console, navigate to "Monitoring" > "Dashboards".
+- Click on "Create Dashboard".
+- Add charts and widgets in your dashboard based totally on your monitoring requirements.
+- In the chart, select a metric and select a metric in Search:
+  CPU in VM instance -> Metric: CPU Utilization -> Apply -> Apply.
+
+Step 3: Alerting
+- Select "Alerting" and go to "Policy" and "Create Policy".
+- Select a metric in VM instance: Metric -> CPU Utilization, Apply.
+- Rolling window function: set a Max, click Next button.
+- Set a threshold value, click Next button.
+- Set a notification channel: Email, give a notification subject title -> "CPU - Utilization".
+- Check mark on "Notify on incident closure".
+- Set a summary.
+- Policy severity level -> Critical. Name the alert policy as -> "CPU - Utility".
+- Click on the Next button, then click on the "Create Policy" button.
+- Go to Explore -> Log Explorer.
+
+Step 4: Create Logs
+- Navigate to Logging > Logs Explorer.
+- Write a query that isolates the exact logs you want to count, and run it to verify.
+- Above the query results, click the "Create Metric" button.
+- Give your metric a name, choose Counter as the metric type, and click "Create Metric".
+
+
+====================================================
+PRACTICAL: DOCKER + JENKINS CONTAINERIZATION (CI/CD)
+====================================================
+
+Create Repo:
+- git push -u origin main
+
+Docker Jenkins Containerization:
+- docker pull jenkins/jenkins:lts
+
+Run Jenkins Container:
+- docker run -d -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+
+Example paths noted:
+- C:\Users\<user>
+- Created
+- https://...
+
+- docker ps
+
+PS H:\practical_
+Initialized empty ...
+PS H:\practical_
+warning: in the
+warning: in the
+PS H:\practical_
+[main (root-commit) ...]
+3 files changed
+create mode ...
+
+Now run at localhost:8080
+
+----------------------------------------------------
+a) Jenkins Setup Steps
+----------------------------------------------------
+
+Step 1: Go to localhost:8080. Enter the password of the Super Admin.
+- How to know password:
+  docker exec -it <container> cat /var/jenkins_home/secrets/InitialAdminPassword
+- Copy password and paste in browser.
+
+Step 2: Install Required Plugins
+- Click on the "Suggested Plugins" option.
+
+Step 3: Create New Job
+- Open Jenkins Dashboard, click "New Item".
+- Enter name (e.g., Prac9).
+- Select "Freestyle Project".
+- Click OK.
+
+Step 4: Configure GitHub Repository
+- Go to "Source Code Management".
+- Select "Git", enter Repository URL:
+  https://github.com/hamzamirza9084/Practical-8-B-81.git
+- Branch: */main
+
+Step 5: Save and Build
+- Click "Save".
+- Click "Build Now".
+- Open Console Output — there will be a "Successfully" notification.
